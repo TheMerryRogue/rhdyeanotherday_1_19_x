@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "rhdyeanotherday",
+  "version": "${version}",
+
+  "name": "Rogue Hallow's Dye Another Day",
+  "description": "White, Black, Brown, and Green Dye can be made from alternate materials",
+  "authors": [
+    "The Merry Rogue"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/rogue-hallows-dye-another-day",
+    "sources": "https://github.com/TheMerryRogue/rhdyeanotherday_1_19_x"
+  },
+
+  "license": "Creative Commons Attribution 3.0 US",
+  "icon": "assets/rhdyeanotherday/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.merryrogue.rhdyeanotherday.DyeAnotherDay"
+    ],
+    "client": [
+      "net.merryrogue.rhdyeanotherday.DyeAnotherDayClient"
+    ]
+  },
+  "mixins": [
+    "rhdyeanotherday.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
